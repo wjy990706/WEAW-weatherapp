@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="5dp">
+
+
+    <TextView
+        android:id="@+id/item_center_tv_con"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/item_center_tv_date"
+        android:textColor="@color/colorPurple"
+        android:layout_marginBottom="10dp"
+        android:text="晴"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/item_center_iv"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="-126dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toLeftOf="@id/item_center_tv_temp"
+        android:src="@mipmap/icon_add" />
+
+    <TextView
+        android:id="@+id/item_center_tv_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="85dp"
+        android:text="9~-1℃"
+        android:textColor="@color/colorPurple"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/item_center_tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="周六"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/colorPurple"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp" />
+
+
+</RelativeLayout>

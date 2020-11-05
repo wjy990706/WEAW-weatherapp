@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg"
+    android:id="@+id/out_layout">
+    <LinearLayout
+        android:id="@+id/frag_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/frag_tv_currenttemp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15℃"
+                android:textColor="@color/colorPurple"
+                android:layout_marginTop="70dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="70sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/frag_tv_city"
+                style="@style/todaytext"
+                android:text="成都"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/colorPurple"
+                android:layout_below="@id/frag_tv_currenttemp"/>
+            <TextView
+                android:id="@+id/frag_tv_condition"
+                style="@style/todaytext"
+                android:layout_marginTop="7dp"
+                android:text="晴"
+                android:textColor="@color/colorPurple"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@id/frag_tv_city"/>
+            <TextView
+                android:id="@+id/frag_tv_date"
+                android:text="2020-10-20"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/colorPurple"
+                android:layout_below="@id/frag_tv_condition"
+                android:layout_marginTop="20dp"
+                style="@style/todaytext" />
+            <TextView
+                android:id="@+id/frag_tv_wind"
+                style="@style/todaytext"
+                android:layout_below="@id/frag_tv_date"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/colorPurple"
+                android:text="东北风3~4级"/>
+
+            <TextView
+                android:id="@+id/frag_tv_line1"
+                android:layout_width="2dp"
+                android:layout_height="25dp"
+                android:layout_alignBottom="@id/frag_tv_wind"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/colorPurple"
+                android:layout_marginBottom="5dp"
+
+                android:layout_toRightOf="@id/frag_tv_wind"
+                />
+
+            <TextView
+                android:id="@+id/frag_tv_temprange"
+                style="@style/todaytext"
+                android:text="20~10℃"
+                android:textColor="@color/colorPurple"
+                android:layout_toRightOf="@id/frag_tv_line1"
+                android:layout_alignBottom="@id/frag_tv_wind" />
+
+            <ImageView
+                android:id="@+id/frag_iv_today"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="70dp"
+                android:scaleType="centerCrop"
+                 />
+        </RelativeLayout>
+        <!-- 用于显示未来三天的天气情况-->
+        <LinearLayout
+            android:id="@+id/frag_center_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/frag_bg"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp"
+            android:padding="10dp"></LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
