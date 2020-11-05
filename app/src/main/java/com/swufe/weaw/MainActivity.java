@@ -78,7 +78,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
 
-
     private void setPagerListener() //设置ViewPager页面监听事件
     {
         mainViewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener()//传入ViewPager中的Onpagelistener，有三个方法，分别代表滑动的信息

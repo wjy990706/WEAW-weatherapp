@@ -23,7 +23,6 @@ import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
-import static android.content.Context.MODE_PRIVATE;
 
 
 /**
@@ -51,20 +50,11 @@ public class CityWeatherFragment extends BaseFragment
         wind = view.findViewById(R.id.frag_tv_wind);
         tempRange = view.findViewById(R.id.frag_tv_temprange);
         date = view.findViewById(R.id.frag_tv_date);
-        /*clothIndexTv = view.findViewById(R.id.frag_index_tv_dress);
-        carIndexTv = view.findViewById(R.id.frag_index_tv_washcar);
-        coldIndexTv = view.findViewById(R.id.frag_index_tv_cold);
-        sportIndexTv = view.findViewById(R.id.frag_index_tv_sport);
-        raysIndexTv = view.findViewById(R.id.frag_index_tv_rays);*/
+
         dayImagview = view.findViewById(R.id.frag_iv_today);
         futureLayout = view.findViewById(R.id.frag_center_layout);
         outLayout = view.findViewById(R.id.out_layout);
-//        设置点击事件的监听
-      /*  clothIndexTv.setOnClickListener(this);
-        carIndexTv.setOnClickListener(this);
-        coldIndexTv.setOnClickListener(this);
-        sportIndexTv.setOnClickListener(this);
-        raysIndexTv.setOnClickListener(this);*/
+
     }
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
